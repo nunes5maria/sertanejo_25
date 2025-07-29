@@ -1,1 +1,192 @@
+{
+    "liveServer.settings.port": 5502
+}
+<body>
+    <header class=" p-5">
 
+        <nav class="container d-flex justify-content-between align-items-center" >
+            <img src="img/logo.png" class="nav-img " loading="lazy">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" alt="Logotipo da Tropicália" class="nav-img " loading="lazy">
+            <ul class="nav mt-5">
+                <li class="nav-item"><a class="nav-link" href="#inicio">INÌCIO</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">GALERIA</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">CONTATO</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alterna o contraste de cores"> <i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+            </ul>          
+        </nav>
+
+    </header>
+@@ -40,34 +32,30 @@
+            <div class="inicio-fundo d-flex justify-content-between align-items-center">
+                <div class="esquerda-conteudo">
+                    <h1 class="display-4 text-white fst-italic fw-bold">Bem-vindo(a) a</h1>
+                    <img src="img/logo-2.png" class="mb-3" width="563"
+                    <img src="img/logo-2.png" alt="Logotipo secundário da Tropicália" class="mb-3" width="563"
+                        height="278" loading="lazy">
+                    <a href="#tropicalia"
+                        class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero
+                        conhecer!</a>
+                </div>
+                <img src="img/lossy-page1-640px-Os_Mutantes.tif (1).png" alt="A imagem apresenta o grupo musical Os mutantes, sao tres pessoas cantando em um microfone" title="Os mutantes - CC0 Domínio Público / Acervo Arquivo Nacional" class="img-fluid img-inicio">
+
+              </div>
+            </div>
+        </section>
+
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a tropicália">
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+            <div class="container d-flex align-items-center ">
+                <div class="col-4 d-flex justify-content-center fundo-galeria">
+                    <img src="img/image (1).png" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-5">
+                  <div class="col-5">
+                    <h2>O que é o Sertanejo?</h2>
+                    <p class="p-2">O Sertanejo é um estilo musical do Brasil que veio da música caipira. 
+                      Ele foi se modificando com o passar do tempo, pegando inspirações de outros estilos musicais
+                      e se adaptando às novas culturas do país. No começo, o sertanejo falava sobre a vida
+                      rural e o amor de forma simples, porém com o tempo, seus temas se ampliaram para incluir amor
+                      romântico, dor e saudade, e até influências do pop e funk, criando subgêneros como o sertanejo
+                      universitário..</p>
+
+                         </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens">
+        <section id="galeria">
+            <h2 class="text-center pt-5">Galeria</h2>
+            <div class="container p-3 mt-3 fundo-galeria ">
+
+@@ -81,16 +69,7 @@ <h2 class="text-center pt-5">Galeria</h2>
+                            loading="lazy">
+                    </div>
+                </div>
+                <div class="row mt-4  justify-content-md-center">
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Gilberto_Gil_nos_anos_1960.tif.jpg" class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="img/lossy-page1-640px-Caetano_Veloso_no_III_Festival_da_Música_Popular.tif.jpg"
+                            class="img-fluid rounded-5" loading="lazy">
+                    </div>
+                </div>
+             </div>
+            </div>
+        </section>
+
+        <section id="contato">
+@@ -114,7 +93,7 @@ <h2 class="mb-3">Entre em contato</h2>
+                                placeholder="Escreva sua mensagem"></textarea>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill tamanho-botao">Enviar
+                                mensagem</button>
+                        </div>
+                    </form>
+@@ -129,9 +108,8 @@ <h2 class="mb-3">Entre em contato</h2>
+        <i class="bi bi-tiktok"></i>
+        <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+  
+
+</body>
+
+</html>
+          
+         :root {
+    --laranja-claro: #FF862A;
+    --alto-contraste-fundo: #000000;
+    --alto-contraste-texto: #ffffff;
+    --alto-contraste-link: #ffd700;
+}
+
+body {
+@@ -64,7 +61,9 @@ section {
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    /* Convertido para em aumenta o tamanho da fonte por tabela*/
+    height: 3em;
+    /* Convertido para em */
+    align-content: center;
+
+}
+@@ -137,64 +136,7 @@ h2 {
+    font-weight: bold;
+}
+
+/* chama classe do bootstrap para modificar a cor */
+.form-control {
+    background-color: #F1EDEF;
+}
+.menu-acessibilidade{
+    position: fixed;
+    top:2rem;
+    right:20px;
+    z-index: 1000;
+}
+
+.rotacao-botao{
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade{
+    margin-top:10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button{
+    margin-bottom: 5px;
+}
+.apresenta-lista{
+    display: none;
+}
+
+.alto-contraste{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste header,
+.alto-contraste footer,
+.alto-contraste .formulario{
+    background-color: var(--alto-contraste-fundo);
+    color: var(--alto-contraste-texto);
+}
+
+.alto-contraste .nav-link{
+    color: var(--alto-contraste-link);
+}
+
+.alto-contraste .botao-inicio,
+.alto-contraste .formulario button,
+.alto-contraste .btn-primary{
+    background-color: var(--alto-contraste-link);
+    color: var(--alto-contraste-fundo)
+}
+
+.alto-contraste #tropicalia {
+    background: none;
+}
+
+.alto-contraste #galeria {
+    background-color: var(--alto-contraste-fundo);
+}
+.alto-contraste .fundo-galeria {
+    background: none;
+}
